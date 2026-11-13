@@ -19,7 +19,7 @@ src/ ui/     App cục bộ (Node, không cần npm install)
 ## Cài đặt (một lần)
 
 - Cài **Node.js 22+**. Không cần `npm install`.
-- (Tuỳ chọn) Nhập thư viện từ vựng của bạn: `node scripts/import-library.mjs --clone` (cần `gh` đã đăng nhập; chỉ đọc, không đẩy gì lên GitHub). Hoặc `--sources <thư mục clone english-vocabulary-sources> --communication <thư mục clone english-communication>`. Kết quả nằm ở `workspace/library/` (3592 từ, 1200 câu, lộ trình 30 ngày) và agent chọn từ ở đó khi chuẩn bị từ vựng.
+- (Tuỳ chọn) Nhập thư viện từ vựng của bạn: `node scripts/import-library.mjs --clone` (cần `gh` đã đăng nhập; chỉ đọc, không đẩy gì lên GitHub). Hoặc `--sources <thư mục clone english-coach-sources>` (lộ trình 30 ngày cũ từ repo english-communication đã xóa; `days.json` có sẵn được giữ nguyên). Kết quả nằm ở `workspace/library/` (3592 từ, 1200 câu, lộ trình 30 ngày) và agent chọn từ ở đó khi chuẩn bị từ vựng.
 
 ## Dùng hằng ngày
 

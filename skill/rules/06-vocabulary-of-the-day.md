@@ -9,11 +9,11 @@ Mục tiêu: học viên **chuẩn bị từ vựng trước buổi học** (tab
 
 ## Nguồn từ: thư viện cá nhân (ưu tiên)
 
-Nếu có `workspace/library/words.json` (nhập từ repo `hoangpham2263/english-vocabulary-sources` bằng `scripts/import-library.mjs`): **chọn từ từ đó**, không tự bịa danh sách.
+Nếu có `workspace/library/words.json` (nhập từ repo `hoangpham2263/english-coach-sources` bằng `scripts/import-library.mjs`): **chọn từ từ đó**, không tự bịa danh sách.
 
 1. Quyển phù hợp stage: `library_books` trong `curriculum.json` (A1/A2 -> quyển 1-2, B1 -> 3, B2 -> 4, C1 -> 5, C2 -> 6).
 2. Loại các từ đã có trong `vocab.json` (so theo `word`). Ưu tiên từ khớp **chủ đề** của step hiện tại; nếu không có thì đi theo thứ tự `unit` tăng dần trong quyển.
-3. Mỗi từ thư viện có `lid`, `word`, `ipa`, `vi`, `example`, `example_vi`, `source`. Khi thêm vào `vocab.json`: giữ `ipa`, `vi`; viết `def` tiếng Anh đơn giản; dùng `example` của thư viện làm ví dụ 1 và **tự viết thêm ví dụ 2** (đúng 2 câu); thêm `pos`, `topic`; thêm `source`: `{ "repo": "hoangpham2263/english-vocabulary-sources", "file": "4000-words/book1.json", "lid": "b1-afraid" }`.
+3. Mỗi từ thư viện có `lid`, `word`, `ipa`, `vi`, `example`, `example_vi`, `source`. Khi thêm vào `vocab.json`: giữ `ipa`, `vi`; viết `def` tiếng Anh đơn giản; dùng `example` của thư viện làm ví dụ 1 và **tự viết thêm ví dụ 2** (đúng 2 câu); thêm `pos`, `topic`; thêm `source`: `{ "repo": "hoangpham2263/english-coach-sources", "file": "4000-words/book1.json", "lid": "b1-afraid" }`.
 4. Lộ trình 30 ngày (`workspace/library/days.json`) dùng được cho A1.1-A2.1: lấy `chunks` làm cụm câu của ngày, `pattern` làm mẫu câu; ghi `source.repo = "hoangpham2263/english-communication"`, `source.file = "assets/days.js"`.
 5. Câu ví dụ thay thế lấy từ `workspace/library/sentences.json` (Tatoeba, CC BY 2.0 FR): ghi credit trong `source`.
 6. Giữ ghi chú giấy phép trong `workspace/library/meta.json`; không phát hành lại nội dung thư viện, không đẩy nó lên GitHub.

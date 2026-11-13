@@ -1,6 +1,8 @@
 // One-time (or repeatable) import of the learner's own vocabulary repos into workspace/library/ (gitignored, read-only use):
-//   node scripts/import-library.mjs --sources <clone of hoangpham2263/english-vocabulary-sources> [--communication <clone of hoangpham2263/english-communication>]
-//   node scripts/import-library.mjs --clone      (uses the gh CLI to clone both repos into a NEW temp folder, then deletes it)
+//   node scripts/import-library.mjs --sources <clone of hoangpham2263/english-coach-sources> [--communication <folder with assets/days.js>]
+//   node scripts/import-library.mjs --clone      (uses the gh CLI to clone english-coach-sources into a NEW temp folder, then deletes it)
+// The 30-day plan (days.json) came from hoangpham2263/english-communication, which was deleted; an existing
+// workspace/library/days.json is kept as is unless --communication is given.
 // Nothing is pushed anywhere and nothing is written back to those repos. The library is a word pool the agent picks from
 // when it prepares a day's list (skill/rules/06); the app never changes it.
 import { mkdirSync, mkdtempSync, readFileSync, writeFileSync, existsSync, rmSync } from "node:fs";
@@ -14,15 +16,15 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const out = join(root, "workspace", "library");
 const args = process.argv.slice(2);
 const opt = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : ""; };
-const REPO_SOURCES = "hoangpham2263/english-vocabulary-sources", REPO_COMM = "hoangpham2263/english-communication";
+const REPO_SOURCES = "hoangpham2263/english-coach-sources", REPO_COMM = "hoangpham2263/english-communication";
 
 let tmp = "", src = opt("--sources"), comm = opt("--communication");
 if (args.includes("--clone")) {
   tmp = mkdtempSync(join(tmpdir(), "ec-library-"));
-  for (const r of [REPO_SOURCES, REPO_COMM]) execFileSync("gh", ["repo", "clone", r, join(tmp, r.split("/")[1]), "--", "-q", "--depth", "1"], { stdio: "inherit" });
-  src = join(tmp, "english-vocabulary-sources"); comm = join(tmp, "english-communication");
+  for (const r of [REPO_SOURCES]) execFileSync("gh", ["repo", "clone", r, join(tmp, r.split("/")[1]), "--", "-q", "--depth", "1"], { stdio: "inherit" });
+  src = join(tmp, "english-coach-sources");
 }
-if (!src || !existsSync(join(src, "4000-words"))) { console.error("Cần --sources <thư mục english-vocabulary-sources> hoặc --clone."); process.exit(1); }
+if (!src || !existsSync(join(src, "4000-words"))) { console.error("Cần --sources <thư mục english-coach-sources> hoặc --clone."); process.exit(1); }
 
 const readJson = (f) => JSON.parse(readFileSync(f, "utf8").replace(/^﻿/, ""));
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -50,14 +52,14 @@ if (comm && existsSync(join(comm, "assets", "days.js"))) {
   const plan = ctx.DAYS.map((d) => ({ day: d.d, title: d.t, goal: d.goal, pattern: d.pattern, sound: d.sound, chunks: (d.chunks || []).map(([en, vi]) => ({ en, vi })), speaking_questions: d.qs, self_check: d.self }));
   writeFileSync(join(out, "days.json"), JSON.stringify({ source: { repo: REPO_COMM, file: "assets/days.js" }, weeks: ctx.WEEKS, days: plan }, null, 1) + "\n");
   days = plan.length;
-}
+} else if (existsSync(join(out, "days.json"))) days = readJson(join(out, "days.json")).days.length;
 const meta = {
   imported: new Date().toISOString().slice(0, 10), words: words.length, sentences: sent.sentences.length, days,
   note: "Nội dung của chính bạn (repo riêng tư/công khai của hoangpham2263). Chỉ dùng cục bộ, không đẩy lại lên GitHub, không phát hành lại.",
   credits: [
     { what: "words.json: 4000 từ chia 6 quyển (book 1 dễ -> book 6 khó), mỗi từ có IPA, nghĩa Việt, 1 câu ví dụ", repo: REPO_SOURCES, file: "4000-words/book1..6.json", license: "Repo không ghi giấy phép: nội dung của chủ repo; giữ cục bộ, không phát hành lại." },
     { what: "sentences.json: câu và bản dịch", repo: REPO_SOURCES, file: "sentences/sentences.json", license: `${sent.source}; ${sent.license}` },
-    { what: "days.json: lộ trình 30 ngày nói cho người mới (cụm câu, mẫu câu, câu hỏi luyện nói)", repo: REPO_COMM, file: "assets/days.js", license: "Repo công khai, không ghi giấy phép: nội dung của chủ repo." },
+    { what: "days.json: lộ trình 30 ngày nói cho người mới (cụm câu, mẫu câu, câu hỏi luyện nói)", repo: REPO_COMM, file: "assets/days.js", license: "Repo đã xóa; chỉ còn bản cục bộ này. Nội dung của chủ repo." },
   ],
 };
 writeFileSync(join(out, "meta.json"), JSON.stringify(meta, null, 2) + "\n");
