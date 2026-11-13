@@ -1,0 +1,9 @@
+{
+  "name": "english-coach",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "English teacher skill set + small local web app (src/server.mjs + ui/) for a beginner learner.",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node src/server.mjs" }
+}

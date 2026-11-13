@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "title": "English Coach - Lộ trình giao tiếp từ người mới bắt đầu đến thành thạo (CEFR A1 -> C2)",
+  "note": "Dữ liệu gốc của lộ trình. Rules đọc: curriculum.md. App chỉ đọc file này; tiến độ can-do lưu trong workspace/profile.json. Số giờ = giờ học có hướng dẫn tích lũy (Cambridge, hướng dẫn gần đúng). Số từ = ước lượng tham khảo, CEFR không quy định số từ.",
+  "stages": [
+    {
+      "id": "A1.1", "cefr": "A1", "band": "Người dùng cơ bản", "name": "Survival", "name_vi": "Sống sót",
+      "hours_end": 45, "vocab_target": 300, "library_books": [1], "starter_days": "1-12",
+      "goal_vi": "Nói và hiểu những câu cực ngắn để tự cứu mình: chào hỏi, nói tên, xin nói chậm lại, trả lời câu hỏi rất quen thuộc.",
+      "functions": ["Chào hỏi và tạm biệt", "Giới thiệu bản thân (tên, nơi ở, nghề, tuổi)", "Yêu cầu nói lại / nói chậm / giải thích từ", "Hỏi và trả lời câu hỏi Yes/No", "Cảm ơn và xin lỗi"],
+      "topics": ["Chào hỏi", "Bản thân và gia đình", "Số đếm, tuổi, số điện thoại", "Nghề nghiệp", "Một ngày của tôi", "Đồ ăn thức uống"],
+      "grammar": ["to be (I am / you are / he is)", "I + động từ thường (I like, I live)", "this / that, a / an", "Câu hỏi What / Where / Who", "Số nhiều đơn giản (-s)", "Don't / doesn't ở mức cụm cố định"],
+      "speaking_tasks": ["Giới thiệu bản thân 4 câu", "Hỏi tên và nơi ở bạn mới", "Gọi một món ăn đơn giản", "Nói giờ và số điện thoại"],
+      "cando": [
+        { "id": "A1.1-1", "text": "Tôi chào hỏi, tạm biệt, cảm ơn và xin lỗi đúng lúc." },
+        { "id": "A1.1-2", "text": "Tôi nói được tên, tuổi, quê quán và nghề nghiệp của mình." },
+        { "id": "A1.1-3", "text": "Tôi bảo người khác nói chậm hơn hoặc lặp lại khi tôi không hiểu." },
+        { "id": "A1.1-4", "text": "Tôi hiểu và nói được số từ 0 đến 100, giờ giấc cơ bản." },
+        { "id": "A1.1-5", "text": "Tôi hỏi và trả lời những câu hỏi rất quen thuộc (tên, nơi ở, gia đình)." },
+        { "id": "A1.1-6", "text": "Tôi gọi một món ăn hoặc đồ uống đơn giản." }
+      ],
+      "exit_assessment": { "tasks": ["Hội thoại 2 phút: chào, giới thiệu, hỏi lại 3 câu cơ bản", "Nghe 5 câu hỏi quen thuộc và trả lời đúng ít nhất 4", "Nói và viết 5 câu giới thiệu bản thân"], "pass_vi": "overall >= 6.5 và ít nhất 5/6 can-do đã tick" },
+      "steps": [
+        { "n": 1, "title": "Câu cứu hộ", "focus": "Sorry? / Again, please / Slower, please" },
+        { "n": 2, "title": "Chào hỏi và tên", "focus": "My name is... / Nice to meet you" },
+        { "n": 3, "title": "Quê và nơi ở", "focus": "I'm from... / I live in..." },
+        { "n": 4, "title": "Nghề nghiệp", "focus": "I'm a... / I work at..." },
+        { "n": 5, "title": "Số, tuổi, điện thoại", "focus": "I'm ... years old" },
+        { "n": 6, "title": "Gia đình", "focus": "This is my..." },
+        { "n": 7, "title": "Một ngày của tôi", "focus": "I + verb + at + time" },
+        { "n": 8, "title": "Đồ ăn thức uống", "focus": "I want... / I'd like..." }
+      ]
+    },
+    {
+      "id": "A1.2", "cefr": "A1", "band": "Người dùng cơ bản", "name": "Everyday basics", "name_vi": "Đời thường cơ bản",
+      "hours_end": 95, "vocab_target": 600, "library_books": [1], "starter_days": "13-24",
+      "goal_vi": "Xử lý được tình huống đơn giản ngoài đời: mua sắm, hỏi đường, đi lại, thời tiết, sức khỏe, và vài câu công việc quen thuộc.",
+      "functions": ["Hỏi giá và mua đồ", "Hỏi và chỉ đường", "Nói về sở thích và thói quen", "Hẹn giờ và đặt lịch", "Mô tả cảm giác và triệu chứng đơn giản"],
+      "topics": ["Mua sắm và giá cả", "Đường phố và phương tiện", "Thời tiết", "Sức khỏe", "Sở thích", "Giờ giấc và lịch hẹn"],
+      "grammar": ["Hiện tại đơn (he/she + s, do/does)", "There is / There are", "Can / can't", "Like/love/want + noun hoặc to + verb", "Giới từ nơi chốn (in, on, at, next to)", "How much / How many"],
+      "speaking_tasks": ["Hỏi giá và trả giá một món đồ", "Hỏi đường tới ga hoặc siêu thị", "Hẹn gặp bạn vào một giờ cụ thể", "Nói với bác sĩ mình đau chỗ nào"],
+      "cando": [
+        { "id": "A1.2-1", "text": "Tôi hỏi giá và mua một món đồ trong cửa hàng." },
+        { "id": "A1.2-2", "text": "Tôi hỏi đường và hiểu chỉ dẫn rất ngắn." },
+        { "id": "A1.2-3", "text": "Tôi nói về sở thích và thói quen hằng ngày bằng câu đơn giản." },
+        { "id": "A1.2-4", "text": "Tôi hẹn giờ gặp và nói ngày, giờ rõ ràng." },
+        { "id": "A1.2-5", "text": "Tôi nói mình đau chỗ nào hoặc cảm thấy thế nào." },
+        { "id": "A1.2-6", "text": "Tôi hiểu thông báo và biển báo rất ngắn quen thuộc." }
+      ],
+      "exit_assessment": { "tasks": ["Đóng vai: mua đồ và hỏi đường (3 phút)", "Nghe 3 đoạn hội thoại ngắn và trả lời 5 câu", "Viết tin nhắn 30 từ hẹn gặp bạn"], "pass_vi": "overall >= 6.5, không tiêu chí nào dưới 5, và ít nhất 5/6 can-do đã tick" },
+      "steps": [
+        { "n": 1, "title": "Mua sắm", "focus": "How much is...? / I'll take it" },
+        { "n": 2, "title": "Hỏi đường", "focus": "Where is...? Turn left/right" },
+        { "n": 3, "title": "Đi lại", "focus": "Taxi, bus, train: I'd like to go to..." },
+        { "n": 4, "title": "Thời tiết và bắt chuyện", "focus": "It's sunny / Nice weather" },
+        { "n": 5, "title": "Sức khỏe", "focus": "I have a headache" },
+        { "n": 6, "title": "Sở thích", "focus": "I like + V-ing" },
+        { "n": 7, "title": "Giờ giấc và hẹn", "focus": "Let's meet at..." },
+        { "n": 8, "title": "Ôn tập và kiểm tra", "focus": "Tổng hợp A1" }
+      ]
+    },
+    {
+      "id": "A2.1", "cefr": "A2", "band": "Người dùng cơ bản", "name": "Routine exchanges", "name_vi": "Trao đổi thường ngày",
+      "hours_end": 140, "vocab_target": 1000, "library_books": [2], "starter_days": "25-30",
+      "goal_vi": "Trao đổi thông tin đơn giản về công việc, học tập, gia đình, và bắt đầu kể việc đã xảy ra ở quá khứ.",
+      "functions": ["Kể việc đã làm hôm qua", "Nhờ giúp đỡ và hỏi lại cho rõ", "Báo vấn đề và xin lỗi", "So sánh hai thứ", "Mô tả người và nơi chốn"],
+      "topics": ["Công việc và cuộc họp đơn giản", "Hôm qua / cuối tuần", "Nhà cửa", "Mô tả người", "Mua sắm quần áo", "Du lịch ngắn"],
+      "grammar": ["Quá khứ đơn (động từ có quy tắc và 20 động từ bất quy tắc)", "Hiện tại tiếp diễn", "So sánh hơn / nhất", "Đếm được / không đếm được (some, any, much, many)", "Trạng từ tần suất", "Because / and / but / so"],
+      "speaking_tasks": ["Kể 5 câu về cuối tuần", "Nhờ đồng nghiệp giúp một việc", "So sánh hai điện thoại / hai quán", "Báo một vấn đề và xin lỗi"],
+      "cando": [
+        { "id": "A2.1-1", "text": "Tôi kể được những việc đã làm hôm qua hoặc cuối tuần bằng 5-6 câu." },
+        { "id": "A2.1-2", "text": "Tôi nhờ giúp đỡ và hỏi lại khi chưa rõ trong công việc." },
+        { "id": "A2.1-3", "text": "Tôi mô tả người và nơi mình biết bằng vài câu." },
+        { "id": "A2.1-4", "text": "Tôi so sánh hai thứ và nói thích thứ nào, vì sao." },
+        { "id": "A2.1-5", "text": "Tôi báo một vấn đề đơn giản và xin lỗi lịch sự." },
+        { "id": "A2.1-6", "text": "Tôi viết tin nhắn ngắn về việc cần làm." }
+      ],
+      "exit_assessment": { "tasks": ["Kể về một ngày cuối tuần (1 phút, không nhìn ghi chú)", "Đóng vai: báo vấn đề với đồng nghiệp", "Viết email 50 từ nhờ giúp một việc"], "pass_vi": "overall >= 7.0 và 5/6 can-do" },
+      "steps": [
+        { "n": 1, "title": "Quá khứ đơn có quy tắc", "focus": "I worked / I watched" },
+        { "n": 2, "title": "Quá khứ bất quy tắc thông dụng", "focus": "went, had, saw, ate..." },
+        { "n": 3, "title": "Hôm qua của tôi", "focus": "Kể chuyện 5 câu" },
+        { "n": 4, "title": "Nhờ giúp đỡ", "focus": "Could you...? Can I...?" },
+        { "n": 5, "title": "Xin lỗi và báo vấn đề", "focus": "I'm sorry, there's a problem" },
+        { "n": 6, "title": "So sánh", "focus": "bigger than / the best" },
+        { "n": 7, "title": "Mô tả người và nơi", "focus": "He's tall; It's near..." },
+        { "n": 8, "title": "Ôn tập", "focus": "Tổng hợp" }
+      ]
+    },
+    {
+      "id": "A2.2", "cefr": "A2", "band": "Người dùng cơ bản", "name": "Plans and stories", "name_vi": "Kế hoạch và câu chuyện",
+      "hours_end": 190, "vocab_target": 1500, "library_books": [2], "starter_days": "",
+      "goal_vi": "Nói về kế hoạch tương lai, kể một chuyến đi, nói ý kiến ngắn có lý do, và xử lý du lịch và dịch vụ quen thuộc.",
+      "functions": ["Nói về kế hoạch và dự định", "Kể một chuyến đi", "Đưa ý kiến và lý do ngắn", "Mời, đề nghị, đồng ý, từ chối", "Đặt phòng, đặt bàn, đặt lịch"],
+      "topics": ["Du lịch và đặt chỗ", "Kế hoạch và mục tiêu", "Sở thích và giải trí", "Ăn uống ở nhà hàng", "Công nghệ hằng ngày", "Sức khỏe và lối sống"],
+      "grammar": ["Going to / will cho kế hoạch", "Present continuous cho dự định gần", "Have to / should / must", "Quá khứ tiếp diễn (khái niệm đầu)", "Câu điều kiện loại 0 và 1 đơn giản", "Giới từ thời gian (in, on, at)"],
+      "speaking_tasks": ["Nói kế hoạch tuần sau 1 phút", "Kể một chuyến đi 1 phút", "Đặt phòng khách sạn qua điện thoại", "Nói ý kiến: I think... because..."],
+      "cando": [
+        { "id": "A2.2-1", "text": "Tôi nói về kế hoạch tương lai gần và xa bằng going to / will." },
+        { "id": "A2.2-2", "text": "Tôi kể một chuyến đi hoặc sự kiện trong khoảng một phút." },
+        { "id": "A2.2-3", "text": "Tôi nói ý kiến và một lý do ngắn." },
+        { "id": "A2.2-4", "text": "Tôi mời, đề nghị, đồng ý và từ chối lịch sự." },
+        { "id": "A2.2-5", "text": "Tôi đặt phòng, đặt bàn hoặc đặt lịch bằng điện thoại hoặc tin nhắn." },
+        { "id": "A2.2-6", "text": "Tôi hiểu ý chính của một thông báo hoặc tin nhắn ngắn, rõ ràng." }
+      ],
+      "exit_assessment": { "tasks": ["Nói 1 phút về kế hoạch hoặc chuyến đi, có mở đầu và kết", "Đặt chỗ qua điện thoại giả lập", "Viết 80 từ kể một chuyến đi"], "pass_vi": "overall >= 7.0, grammar >= 6, và 5/6 can-do. Đạt: hoàn thành A2" },
+      "steps": [
+        { "n": 1, "title": "Kế hoạch tuần sau", "focus": "I'm going to..." },
+        { "n": 2, "title": "Dự đoán và quyết định", "focus": "I think I'll..." },
+        { "n": 3, "title": "Nghĩa vụ và lời khuyên", "focus": "have to / should" },
+        { "n": 4, "title": "Kể chuyến đi", "focus": "Quá khứ + trình tự (first, then, after that)" },
+        { "n": 5, "title": "Nói ý kiến", "focus": "I think..., because..." },
+        { "n": 6, "title": "Mời và từ chối", "focus": "Would you like...? I'm afraid I can't" },
+        { "n": 7, "title": "Đặt chỗ", "focus": "I'd like to book..." },
+        { "n": 8, "title": "Ôn tập và kiểm tra A2", "focus": "Tổng hợp A2" }
+      ]
+    },
+    {
+      "id": "B1.1", "cefr": "B1", "band": "Người dùng độc lập", "name": "Threshold: getting by", "name_vi": "Ngưỡng độc lập: xoay xở",
+      "hours_end": 270, "vocab_target": 2000, "library_books": [3], "starter_days": "",
+      "goal_vi": "Xử lý hầu hết tình huống khi đi lại và bước vào cuộc trò chuyện chưa chuẩn bị về chủ đề quen thuộc.",
+      "functions": ["Bắt đầu, duy trì và kết thúc hội thoại", "Hỏi thêm thông tin và làm rõ", "Nói kinh nghiệm đã có (đã từng)", "Phàn nàn và giải quyết vấn đề dịch vụ", "Diễn đạt lại khi chưa tìm được từ"],
+      "topics": ["Du lịch và sự cố", "Công việc và học tập", "Sở thích và thói quen", "Sức khỏe", "Tin tức quen thuộc", "Mối quan hệ"],
+      "grammar": ["Hiện tại hoàn thành (have done) cho kinh nghiệm", "Quá khứ đơn vs hiện tại hoàn thành", "Câu điều kiện loại 1 và 2", "Mệnh đề quan hệ (who, which, that)", "Used to", "Động từ khiếm khuyết cho khả năng (might, may)"],
+      "speaking_tasks": ["Trò chuyện 3 phút về sở thích, không chuẩn bị", "Phàn nàn về dịch vụ và đề xuất cách giải quyết", "Kể về một kinh nghiệm (Have you ever...?)", "Diễn đạt lại khi quên từ (It's a thing for...)"],
+      "cando": [
+        { "id": "B1.1-1", "text": "Tôi bắt đầu và duy trì một cuộc trò chuyện về chủ đề quen thuộc trong 3 phút." },
+        { "id": "B1.1-2", "text": "Tôi xử lý được sự cố khi đi lại (trễ chuyến, mất đồ, nhầm đặt chỗ)." },
+        { "id": "B1.1-3", "text": "Tôi nói về kinh nghiệm bằng hiện tại hoàn thành." },
+        { "id": "B1.1-4", "text": "Tôi hỏi thêm và làm rõ khi chưa hiểu hết." },
+        { "id": "B1.1-5", "text": "Tôi diễn đạt lại bằng từ khác khi quên một từ." },
+        { "id": "B1.1-6", "text": "Tôi hiểu ý chính của chương trình rõ ràng, tốc độ vừa về chủ đề quen thuộc." }
+      ],
+      "exit_assessment": { "tasks": ["Hội thoại tự do 4 phút với giáo viên về chủ đề bốc thăm", "Đóng vai: phàn nàn và giải quyết vấn đề", "Nghe 3 phút một đoạn tin/phỏng vấn và nêu ý chính"], "pass_vi": "overall >= 7.0, fluency >= 6, comprehension >= 6.5, và 5/6 can-do" },
+      "steps": [
+        { "n": 1, "title": "Kinh nghiệm", "focus": "Have you ever...? I've been to..." },
+        { "n": 2, "title": "Trò chuyện không chuẩn bị", "focus": "Mở, duy trì, kết thúc" },
+        { "n": 3, "title": "Sự cố khi đi lại", "focus": "Phàn nàn và đề nghị cách giải quyết" },
+        { "n": 4, "title": "Giả định", "focus": "If I were... / If it rains..." },
+        { "n": 5, "title": "Mệnh đề quan hệ", "focus": "a person who..., a place where..." },
+        { "n": 6, "title": "Làm rõ và diễn đạt lại", "focus": "What I mean is..." },
+        { "n": 7, "title": "Nghe ý chính", "focus": "Tin tức quen thuộc" },
+        { "n": 8, "title": "Ôn tập", "focus": "Tổng hợp" }
+      ]
+    },
+    {
+      "id": "B1.2", "cefr": "B1", "band": "Người dùng độc lập", "name": "Threshold: connected speech", "name_vi": "Ngưỡng độc lập: nói liền mạch",
+      "hours_end": 355, "vocab_target": 2500, "library_books": [3], "starter_days": "",
+      "goal_vi": "Nối các ý thành bài nói liền mạch: kể chuyện, mô tả trải nghiệm, giải thích lý do và kế hoạch.",
+      "functions": ["Kể chuyện có mở, thân, kết", "Mô tả ước mơ, hy vọng, tham vọng", "Đưa lý do và giải thích ý kiến", "Tóm tắt nội dung sách hoặc phim", "Viết thư và email cá nhân mô tả trải nghiệm"],
+      "topics": ["Câu chuyện cá nhân", "Phim, sách, truyền thông", "Ước mơ và mục tiêu nghề nghiệp", "Văn hóa và truyền thống", "Môi trường", "Công nghệ trong đời sống"],
+      "grammar": ["Quá khứ hoàn thành (khái niệm đầu)", "Câu bị động hiện tại và quá khứ", "Câu tường thuật (reported speech)", "Từ nối (however, although, as a result)", "Câu điều kiện loại 2 mở rộng", "Gerund và infinitive"],
+      "speaking_tasks": ["Kể một câu chuyện 2 phút", "Tóm tắt một bộ phim hoặc cuốn sách và nêu phản ứng", "Nói mục tiêu nghề nghiệp và lý do", "Thuật lại lời người khác (reported speech)"],
+      "cando": [
+        { "id": "B1.2-1", "text": "Tôi kể một câu chuyện có mở đầu, diễn biến, kết thúc trong khoảng hai phút." },
+        { "id": "B1.2-2", "text": "Tôi tóm tắt cốt truyện của một phim hoặc sách và nói phản ứng của mình." },
+        { "id": "B1.2-3", "text": "Tôi nói về ước mơ và tham vọng và đưa lý do." },
+        { "id": "B1.2-4", "text": "Tôi dùng từ nối để nối các câu thành đoạn nói." },
+        { "id": "B1.2-5", "text": "Tôi viết email, thư cá nhân dài 120-150 từ mô tả trải nghiệm." },
+        { "id": "B1.2-6", "text": "Tôi thuật lại ý người khác bằng câu tường thuật." }
+      ],
+      "exit_assessment": { "tasks": ["Kể chuyện 2 phút có từ nối, không nhìn ghi chú", "Tóm tắt một bài nghe 3 phút", "Viết email 150 từ kể một trải nghiệm"], "pass_vi": "overall >= 7.0, mọi tiêu chí >= 6, và 5/6 can-do. Đạt: hoàn thành B1" },
+      "steps": [
+        { "n": 1, "title": "Cấu trúc câu chuyện", "focus": "First, then, in the end" },
+        { "n": 2, "title": "Quá khứ hoàn thành", "focus": "had done khi kể trước-sau" },
+        { "n": 3, "title": "Từ nối", "focus": "however / although / as a result" },
+        { "n": 4, "title": "Phim và sách", "focus": "Tóm tắt, nêu phản ứng" },
+        { "n": 5, "title": "Bị động", "focus": "It was made in..." },
+        { "n": 6, "title": "Tường thuật", "focus": "She said that..." },
+        { "n": 7, "title": "Ước mơ và mục tiêu", "focus": "I hope to... because..." },
+        { "n": 8, "title": "Ôn tập và kiểm tra B1", "focus": "Tổng hợp B1" }
+      ]
+    },
+    {
+      "id": "B2.1", "cefr": "B2", "band": "Người dùng độc lập", "name": "Vantage: discussion", "name_vi": "Thảo luận và lập luận",
+      "hours_end": 450, "vocab_target": 3200, "library_books": [4], "starter_days": "",
+      "goal_vi": "Tham gia thảo luận tự nhiên, bảo vệ quan điểm, cân nhắc ưu nhược điểm, và hiểu bài nói dài về chủ đề quen thuộc.",
+      "functions": ["Trình bày và bảo vệ quan điểm", "Đồng ý, phản biện lịch sự, nhượng bộ", "Phân tích ưu nhược điểm", "Suy đoán và giả định (past/present)", "Hiểu và nhận xét tin tức, bài giảng"],
+      "topics": ["Giáo dục", "Xã hội và truyền thông", "Môi trường và năng lượng", "Sức khỏe cộng đồng", "Công nghệ và AI", "Du lịch và văn hóa"],
+      "grammar": ["Câu điều kiện hỗn hợp và loại 3", "Modal dự đoán quá khứ (must have, might have)", "Bị động mở rộng, causative (have sth done)", "Mệnh đề quan hệ không xác định", "Đảo ngữ nhẹ (rarely, not only)", "Cụm động từ thường gặp"],
+      "speaking_tasks": ["Thảo luận nhóm 5 phút về một vấn đề xã hội", "Bài nói 2-3 phút: ưu và nhược điểm của một lựa chọn", "Phản biện lịch sự một ý kiến", "Tóm tắt và nhận xét bài báo"],
+      "cando": [
+        { "id": "B2.1-1", "text": "Tôi tham gia thảo luận về chủ đề quen thuộc và giữ vững quan điểm của mình." },
+        { "id": "B2.1-2", "text": "Tôi giải thích ưu và nhược điểm của các lựa chọn." },
+        { "id": "B2.1-3", "text": "Tôi phản biện lịch sự và nhượng bộ khi cần." },
+        { "id": "B2.1-4", "text": "Tôi hiểu bài giảng hoặc tin tức dài khi chủ đề quen thuộc." },
+        { "id": "B2.1-5", "text": "Tôi suy đoán về quá khứ bằng modal (must have, might have)." },
+        { "id": "B2.1-6", "text": "Tôi viết bài luận 200 từ có luận điểm và lý lẽ rõ ràng." }
+      ],
+      "exit_assessment": { "tasks": ["Thảo luận 6 phút có phản biện với giáo viên", "Bài nói 3 phút về ưu và nhược điểm", "Viết luận 200 từ"], "pass_vi": "overall >= 7.0, grammar >= 6.5, fluency >= 6.5, và 5/6 can-do" },
+      "steps": [
+        { "n": 1, "title": "Nêu và bảo vệ quan điểm", "focus": "In my view... / The main reason is..." },
+        { "n": 2, "title": "Đồng ý và phản biện", "focus": "I see your point, but..." },
+        { "n": 3, "title": "Ưu nhược điểm", "focus": "On the one hand... on the other hand..." },
+        { "n": 4, "title": "Giả định nâng cao", "focus": "If I had..., I would have..." },
+        { "n": 5, "title": "Suy đoán quá khứ", "focus": "must have / might have" },
+        { "n": 6, "title": "Nghe bài dài", "focus": "Ghi ý chính, luận điểm" },
+        { "n": 7, "title": "Viết luận", "focus": "Mở bài, thân bài, kết luận" },
+        { "n": 8, "title": "Ôn tập", "focus": "Tổng hợp" }
+      ]
+    },
+    {
+      "id": "B2.2", "cefr": "B2", "band": "Người dùng độc lập", "name": "Vantage: professional", "name_vi": "Giao tiếp công việc chuyên nghiệp",
+      "hours_end": 560, "vocab_target": 4000, "library_books": [4], "starter_days": "",
+      "goal_vi": "Giao tiếp chuyên nghiệp: họp, thuyết trình, đàm phán nhẹ, viết báo cáo, và trò chuyện lưu loát với người bản xứ.",
+      "functions": ["Điều hành và tham gia cuộc họp", "Thuyết trình có cấu trúc", "Đàm phán và thương lượng nhẹ", "Viết báo cáo, email chuyên nghiệp", "Xử lý câu hỏi bất ngờ"],
+      "topics": ["Công việc và quản lý", "Kinh tế và kinh doanh", "Phỏng vấn xin việc", "Phát triển sự nghiệp", "Dịch vụ khách hàng", "Làm việc nhóm quốc tế"],
+      "grammar": ["Từ vựng học thuật và collocation", "Đảo ngữ và nhấn mạnh (cleft sentences)", "Cụm danh từ phức", "Hedging (it seems, tends to)", "Phân từ và mệnh đề rút gọn", "Trang trọng và thân mật (register)"],
+      "speaking_tasks": ["Thuyết trình 5 phút có slide và Q&A", "Phỏng vấn xin việc giả định", "Đàm phán một thỏa thuận đơn giản", "Điều hành 10 phút họp nhóm"],
+      "cando": [
+        { "id": "B2.2-1", "text": "Tôi thuyết trình 5 phút có cấu trúc và trả lời câu hỏi." },
+        { "id": "B2.2-2", "text": "Tôi tham gia hoặc điều hành cuộc họp và nêu ý kiến rõ ràng." },
+        { "id": "B2.2-3", "text": "Tôi đàm phán và đưa ra nhượng bộ có điều kiện." },
+        { "id": "B2.2-4", "text": "Tôi viết báo cáo và email chuyên nghiệp, giọng điệu phù hợp." },
+        { "id": "B2.2-5", "text": "Tôi trò chuyện với người bản xứ mà không bị ngắt quãng nhiều." },
+        { "id": "B2.2-6", "text": "Tôi trả lời phỏng vấn xin việc bằng các ví dụ cụ thể." }
+      ],
+      "exit_assessment": { "tasks": ["Thuyết trình 5 phút + 3 câu hỏi", "Phỏng vấn giả định 8 phút", "Viết báo cáo 250 từ"], "pass_vi": "overall >= 7.5, mọi tiêu chí >= 7, và 5/6 can-do. Đạt: hoàn thành B2" },
+      "steps": [
+        { "n": 1, "title": "Cấu trúc thuyết trình", "focus": "Mở, thân, kết, chuyển ý" },
+        { "n": 2, "title": "Họp", "focus": "Điều hành và tham gia" },
+        { "n": 3, "title": "Đàm phán", "focus": "If you can..., we could..." },
+        { "n": 4, "title": "Phỏng vấn", "focus": "STAR: tình huống, nhiệm vụ, hành động, kết quả" },
+        { "n": 5, "title": "Viết chuyên nghiệp", "focus": "Báo cáo và email" },
+        { "n": 6, "title": "Register", "focus": "Trang trọng và thân mật" },
+        { "n": 7, "title": "Q&A bất ngờ", "focus": "Hedging, kéo dài thời gian" },
+        { "n": 8, "title": "Ôn tập và kiểm tra B2", "focus": "Tổng hợp B2" }
+      ]
+    },
+    {
+      "id": "C1", "cefr": "C1", "band": "Người dùng thành thạo", "name": "Effective operational proficiency", "name_vi": "Trôi chảy và chính xác",
+      "hours_end": 780, "vocab_target": 6000, "library_books": [5], "starter_days": "",
+      "goal_vi": "Diễn đạt lưu loát, tự nhiên, linh hoạt cho mục đích xã hội và chuyên môn; hiểu văn bản dài, phức tạp và ý ngầm.",
+      "functions": ["Diễn đạt ý tưởng chính xác, sắc thái", "Điều chỉnh phong cách theo người nghe", "Lập luận phức tạp, tổng hợp nhiều quan điểm", "Hiểu ý ngầm, hài hước, thành ngữ", "Viết văn bản có cấu trúc rõ, nhấn mạnh điểm chính"],
+      "topics": ["Chính sách và xã hội", "Khoa học và công nghệ", "Văn học và nghệ thuật", "Kinh tế và toàn cầu hóa", "Đạo đức và triết học đời thường", "Chuyên ngành của bạn"],
+      "grammar": ["Cấu trúc phức tạp và mệnh đề lồng", "Đảo ngữ và nhấn mạnh phong phú", "Collocation, thành ngữ và cụm cố định", "Giả định và subjunctive", "Phong cách học thuật", "Sắc thái của modal"],
+      "speaking_tasks": ["Tranh luận 8 phút về vấn đề phức tạp", "Thuyết trình 10 phút chủ đề chuyên ngành", "Phỏng vấn và tóm tắt bài nghe khó", "Chuyển đổi giọng điệu trang trọng và thân mật"],
+      "cando": [
+        { "id": "C1-1", "text": "Tôi nói trôi chảy, ít phải tìm từ, trong hầu hết hội thoại xã hội và chuyên môn." },
+        { "id": "C1-2", "text": "Tôi trình bày những chủ đề phức tạp, có tiểu chủ đề và kết luận rõ ràng." },
+        { "id": "C1-3", "text": "Tôi hiểu bài nói dài không rõ cấu trúc và ý ngầm." },
+        { "id": "C1-4", "text": "Tôi hiểu văn bản dài, phức tạp và phân biệt văn phong." },
+        { "id": "C1-5", "text": "Tôi viết văn bản rõ ràng, có cấu trúc, nêu điểm quan trọng." },
+        { "id": "C1-6", "text": "Tôi chọn phong cách phù hợp với người đọc hoặc người nghe." }
+      ],
+      "exit_assessment": { "tasks": ["Tranh luận 10 phút với giáo viên đóng vai phản biện", "Thuyết trình 10 phút chuyên ngành + Q&A", "Viết bài 350 từ lập luận"], "pass_vi": "overall >= 8.0, mọi tiêu chí >= 7.5, và 5/6 can-do" },
+      "steps": [
+        { "n": 1, "title": "Sắc thái và chính xác", "focus": "Chọn từ đúng mức độ" },
+        { "n": 2, "title": "Lập luận phức tạp", "focus": "Tổng hợp nhiều quan điểm" },
+        { "n": 3, "title": "Thành ngữ và collocation", "focus": "Tự nhiên như người bản xứ" },
+        { "n": 4, "title": "Nghe ý ngầm", "focus": "Giọng điệu, mỉa mai, hàm ý" },
+        { "n": 5, "title": "Thuyết trình chuyên ngành", "focus": "Cấu trúc và nhấn mạnh" },
+        { "n": 6, "title": "Văn phong học thuật", "focus": "Viết 350 từ" },
+        { "n": 7, "title": "Chuyển giọng điệu", "focus": "Register switching" },
+        { "n": 8, "title": "Ôn tập và kiểm tra C1", "focus": "Tổng hợp C1" }
+      ]
+    },
+    {
+      "id": "C2", "cefr": "C2", "band": "Người dùng thành thạo", "name": "Mastery", "name_vi": "Thành thạo",
+      "hours_end": 1100, "vocab_target": 8000, "library_books": [6], "starter_days": "",
+      "goal_vi": "Hiểu hầu như mọi thứ và diễn đạt trôi chảy, chính xác sắc thái tinh tế; tự sửa mượt mà khi gặp khó khăn.",
+      "functions": ["Truyền đạt sắc thái rất tinh tế", "Tự sửa và diễn đạt lại không để lộ", "Dùng thành ngữ, tiếng lóng, hài hước đúng ngữ cảnh", "Tóm tắt, phê bình nguồn phức tạp", "Thuyết phục và dẫn dắt người nghe"],
+      "topics": ["Mọi chủ đề trừu tượng", "Văn học và phê bình", "Học thuật chuyên sâu", "Tranh biện công chúng", "Văn hóa và ngôn ngữ", "Chuyên ngành nâng cao"],
+      "grammar": ["Hoàn toàn linh hoạt trong cấu trúc", "Văn phong theo thể loại", "Ngữ dụng và hàm ý", "Biến thể vùng miền và giọng", "Tối ưu hóa cấu trúc thông tin", "Phong cách cá nhân"],
+      "speaking_tasks": ["Diễn thuyết 15 phút với phần chất vấn", "Tranh biện với hai bên đối lập", "Tóm tắt và phê bình một văn bản khó", "Đàm phán phức tạp có nhiều bên"],
+      "cando": [
+        { "id": "C2-1", "text": "Tôi hiểu mọi thứ nghe và đọc mà không gặp khó khăn." },
+        { "id": "C2-2", "text": "Tôi tham gia mọi cuộc trò chuyện hoặc thảo luận một cách tự nhiên." },
+        { "id": "C2-3", "text": "Tôi diễn đạt sắc thái tinh tế một cách chính xác." },
+        { "id": "C2-4", "text": "Tôi tự sửa và tái cấu trúc câu mượt mà khi gặp trở ngại." },
+        { "id": "C2-5", "text": "Tôi trình bày lập luận có cấu trúc giúp người nghe nhớ điểm chính." },
+        { "id": "C2-6", "text": "Tôi viết tóm tắt và phê bình các nguồn học thuật hoặc văn học." }
+      ],
+      "exit_assessment": { "tasks": ["Diễn thuyết 15 phút + chất vấn", "Tóm tắt và phê bình một bài đọc khó (viết 400 từ)", "Hội thoại tự do 15 phút với nhiều giọng"], "pass_vi": "overall >= 8.5, mọi tiêu chí >= 8, và 5/6 can-do. Đạt: hoàn thành lộ trình" },
+      "steps": [
+        { "n": 1, "title": "Sắc thái tinh tế", "focus": "Hàm ý, mức độ chắc chắn" },
+        { "n": 2, "title": "Tự sửa mượt mà", "focus": "Backtrack và restructure" },
+        { "n": 3, "title": "Thuyết phục", "focus": "Cấu trúc lập luận và nhịp điệu" },
+        { "n": 4, "title": "Tranh biện", "focus": "Hai bên đối lập" },
+        { "n": 5, "title": "Đọc và phê bình", "focus": "Văn bản học thuật, văn học" },
+        { "n": 6, "title": "Nhiều giọng", "focus": "Hiểu giọng khác nhau, tốc độ bản xứ" },
+        { "n": 7, "title": "Diễn thuyết", "focus": "15 phút có chất vấn" },
+        { "n": 8, "title": "Đánh giá cuối", "focus": "Kiểm tra C2" }
+      ]
+    }
+  ]
+}
